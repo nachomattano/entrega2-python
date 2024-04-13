@@ -10,3 +10,7 @@ def generate_stats(names, goals, goals_avoided, assists):
         }
         stats.append(jugador)
     return stats
+
+def max_scorer(stats):
+    max_goals = max(stats, key=lambda x: x["Goles a favor"])
+    return max_goals["Nombre"], max_goals["Goles a favor"]
