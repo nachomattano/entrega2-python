@@ -22,3 +22,7 @@ def most_influential(stats):
 def average_goals(goals):
     total = sum(goals)
     return total / 25
+
+def average_goals_max_scorer(goals):
+    return goals / 25
+
