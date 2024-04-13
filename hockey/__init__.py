@@ -18,3 +18,7 @@ def max_scorer(stats):
 def most_influential(stats):
     max_influential = max(stats, key=lambda x: x["Goles a favor"] * 1.5 + x["Goles evitados"] * 1.25 + x["Asistencias"])
     return max_influential["Nombre"]
+
+def average_goals(goals):
+    total = sum(goals)
+    return total / 25
